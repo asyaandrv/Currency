@@ -1,0 +1,86 @@
+* {
+  font-family: "Playpen Sans", cursive;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #fff;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+}
+
+input,
+select {
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.06);
+  margin: 1rem 0;
+  height: 2.5rem;
+  width: 7rem;
+  margin-right: 1rem;
+  padding: 0 10px;
+}
+
+h2 {
+  margin-bottom: 2rem;
+}
+
+button {
+  align-items: center;
+  background-color: #fa6400;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  margin: 1rem;
+  color: #fff;
+  cursor: pointer;
+  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  min-height: 3rem;
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+  user-select: none;
+}
+
+.button_wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.button-5:hover,
+.button-5:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button-5:hover {
+  transform: translateY(-1px);
+}
+
+.button-5:active {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+#section-calculator {
+  padding: 2rem;
+  border-radius: 24px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#form {
+  width: 200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#calculator-rate-info {
+  display: none;
+}

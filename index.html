@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+Enter your name, surname and student id number here
+-->
+<html>
+  <head>
+    <title>Exchange Rates</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <section id="section-calculator">
+      <h2>Currency exchange calculator</h2>
+      <div>
+        <label for="date-on">Date:</label>
+        <input required placeholder="YYYY-MM-DD" type="text" id="date-on" />
+
+        <div id="form">
+          <label for="amount-sell">Sell:</label>
+          <label for="amount-buy">Buy:</label>
+          <select onchange="updateCurrencySell()" id="currency-sell"></select>
+          <select id="currency-buy"></select>
+          <input type="number" id="amount-sell" placeholder="Amount to sell" />
+          <input type="number" id="amount-buy" placeholder="Amount to buy" />
+        </div>
+
+        <div id="calculator-rate-info">
+          1 EUR=<span id="calculator-rate"></span>
+          <span id="calculator-currency"></span>
+        </div>
+
+        <h3>Result: <span id="rates-source"></span></h3>
+
+        <div class="button_wrap">
+          <button onclick="convert()" id="convert">Convert</button>
+        </div>
+      </div>
+    </section>
+
+    <script src="rates.js"></script>
+    <script src="homework3.js"></script>
+  </body>
+</html>
